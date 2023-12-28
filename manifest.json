@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmark a Tab ",
+  "version": "1.0",
+  "description": "Retrieve list of Bookmarks , Add or Remove Bookmarks , Remove the entire folder ",
+  "permissions": [
+    "tabGroups",
+    "activeTab",
+    "tabs",
+    "bookmarks",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tab List Extension",
+    "scripts": "popup.js"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
